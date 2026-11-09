@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Campus Reminder</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Add a task</h2>
+      <form id="task-form">
+        <label for="task-title">What is it?</label>
+        <input type="text" id="task-title" placeholder="e.g. Math assignment" required>
+
+        <div class="row">
+          <div>
+            <label for="task-date">Date</label>
+            <input type="date" id="task-date" required>
+          </div>
+          <div>
+            <label for="task-time">Time</label>
+            <input type="time" id="task-time" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Add task</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Upcoming</h2>
+      <ul id="task-list">
+        <li class="empty">No tasks yet.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
